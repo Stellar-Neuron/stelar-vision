@@ -136,45 +136,12 @@
 </section>
 
 
-<!-- Teaser video-->
-<!-- <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%"> -->
-        <!-- Your video here -->
-        <!-- <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section> -->
-<!-- End teaser video -->
-
-
-<!-- Primary image -->
-<section class="hero is-light is-small">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="static/images/FigureOne.png" alt="MY ALT TEXT" class="primary-image"/>
-      <h2 class="subtitle has-text-centered">
-        <b>Limitations of the Popular Chain-of-Thought Reasoning Structures.</b> The widely adopted Chain-of-Thought (CoT) reasoning paradigm (in green) often results in unnecessarily verbose reasoning processes, as demonstrated in the first example. Under CoT reasoning, the model redundantly counts each cube, whereas with Graph topology (in blue), it quickly identifies the key point of the question. In the bottom-row example, CoT reasoning begins with a detailed examination of each subplot but ultimately arrives at an incorrect answer. In contrast, Tree topology (in red) initiates reasoning with a high-level overview before delving into specific features. In both scenarios, CoT-style reasoning proves suboptimal.
-      </h2>
-    </div>
-    </div>
-  </div>
-</section>
-<!-- End primary image -->
-
-
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3">Introduction</h2>
         <div class="content has-text-justified">
           <p>
             Vision-language models (VLMs) have made significant strides in reasoning, yet they often struggle with complex multimodal tasks and tend to generate overly verbose outputs. A key limitation is their reliance on chain-of-thought (CoT) reasoning, despite many tasks benefiting from alternative topologies like trees or graphs. To address this, we introduce STELAR-Vision, a training framework for topology-aware reasoning. At its core is TopoAug, a synthetic data pipeline that enriches training with diverse topological structures. Using supervised fine-tuning and reinforcement learning, we post-train Qwen2VL models with both accuracy and efficiency in mind. Additionally, we propose Frugal Learning, which reduces output length with minimal accuracy loss.
@@ -204,6 +171,64 @@ On MATH-V and VLM_S2H, STELAR-Vision improves accuracy by 9.7% over its base mod
 <!-- End large image -->
 
 
+<!-- Teaser video-->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%"> -->
+        <!-- Your video here -->
+        <!-- <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2>
+    </div>
+  </div>
+</section> -->
+<!-- End teaser video -->
+
+
+<!-- Motivation image -->
+<section class="hero is-light is-small">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Motivation</h2>
+      </div>
+      <img src="static/images/FigureOne.png" alt="MY ALT TEXT" class="primary-image"/>
+      <h2 class="subtitle">
+        <b>Limitations of the Popular Chain-of-Thought Reasoning Structures.</b> The widely adopted Chain-of-Thought (CoT) reasoning paradigm (in green) often results in unnecessarily verbose reasoning processes, as demonstrated in the first example. Under CoT reasoning, the model redundantly counts each cube, whereas with Graph topology (in blue), it quickly identifies the key point of the question. In the bottom-row example, CoT reasoning begins with a detailed examination of each subplot but ultimately arrives at an incorrect answer. In contrast, Tree topology (in red) initiates reasoning with a high-level overview before delving into specific features. In both scenarios, CoT-style reasoning proves suboptimal.
+      </h2>
+    </div>
+    </div>
+  </div>
+</section>
+<!-- End motivation image -->
+
+
+<!-- Two images side by side -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-half has-text-centered">
+        <img src="static/images/topo_accuracy_per_subject.png" alt="Comparison of topology accuracy across subjects" class="image"/>
+        <h2 class="subtitle has-text-centered">
+          <b>Comparison of topology accuracy across subjects:</b> Accuracy of Chain, Tree, and Graph reasoning topological structures per subject of MATH-V dataset. Chain remains the best overall reasoning structure, while Tree, and Graph perform better in at reasoning subjects such as "graph theory" or "statistics".
+        </h2>
+      </div>
+      <div class="column is-half has-text-centered">
+        <img src="static/images/violin_plot.png" alt="Caption B" class="image"/>
+        <h2 class="subtitle has-text-centered">
+          <b>Distribution of generated reasoning token length</b> of Chain, Tree, and Graph topological structures in TopoAug Dataset. The box within each violin plot represents the median, and 25% and 75% percentile thresholds.
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End two images side by side -->
+
+
 <!-- Paper contributions -->
 <section class="section hero is-light is-small">
   <div class="container is-max-desktop">
@@ -225,33 +250,30 @@ On MATH-V and VLM_S2H, STELAR-Vision improves accuracy by 9.7% over its base mod
 
 
 <!-- Image carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
+      <h2 class="title is-3">Experiments</h2>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item" style="translate: 0% 40%;">
-        <!-- Your image here -->
         <img src="static/images/main_table.png" alt="Quantitative evaluation results of STELAR-Vision across benchmarks"/>
         <h2 class="subtitle has-text-centered">
           <strong>Quantitative Evaluation.</strong> STELAR-Vision achieves strong gains across both in-distribution and out-of-distribution reasoning benchmarks. On ID datasets, it outperforms its base model Qwen2VL-7B-Instruct by <strong>9.7%</strong>, and even surpasses the larger Qwen2VL-72B-Instruct by <strong>7.3%</strong>. On OOD benchmarks, it exceeds Phi-4-multimodal-instruct by up to <strong>36%</strong> and LLaMA-3.2-11B-Vision-Instruct by up to <strong>13.2%</strong>. Compared to Chain-Only training, STELAR-Vision achieves up to <strong>13%</strong> higher accuracy, highlighting the power of topological augmentation.
         </h2>
       </div>
       <div class="item" style="translate: 0% 30%;">
-        <!-- Your image here -->
         <img src="static/images/train_method.png" alt="Impact of TopoAug Dataset and Training Methods"/>
         <h2 class="subtitle has-text-centered">
           <strong>Impact of TopoAug Dataset and Training Methods.</strong> We present an ablation study on the in-distribution VLM_S2H and Math-V datasets to compare the performance of our models against counterparts trained exclusively on chain-based reasoning data across all training methods. <strong>STELAR-Vision</strong> consistently outperforms all Chain-Only variants across all ID datasets-specifically it improves the highest variant Chain-Only from 25% to 31% by <strong>6%</strong>, and boosts overall accuracy by <strong>4.3%</strong>, highlighting the effectiveness of topological augmentation.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/token_len.png" alt="Comparison of accuracy and generated token length across models"/>
         <h2 class="subtitle has-text-centered">
           <strong>Comparison of accuracy and generated token length across models:</strong> STELAR-Vision improves performance while using fewer generation tokens. Frugal learning further improves generation efficiency.
        </h2>
      </div>
      <div class="item" style="translate: 0% 10%;">
-      <!-- Your image here -->
       <img src="static/images/topo_accuracy_per_subject.png" alt="Comparison of topology accuracy across subjects in the MATH-V dataset"/>
       <h2 class="subtitle has-text-centered">
         <strong>Comparison of topology accuracy across subjects:</strong> Accuracy of Chain, Tree, and Graph reasoning topological structures per subject of the MATH-V dataset. Chain remains the best overall reasoning structure, while Tree and Graph perform better at reasoning subjects such as "graph theory" or "statistics".
@@ -260,10 +282,57 @@ On MATH-V and VLM_S2H, STELAR-Vision improves accuracy by 9.7% over its base mod
   </div>
 </div>
 </div>
-</section>
+</section> -->
 <!-- End image carousel -->
 
+<section class="hero is-light is-small">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Experiments</h2>
+      </div>
 
+      <img src="static/images/main_table.png" alt="MY ALT TEXT" class="motivation-image"/>
+      <h2 class="subtitle">
+        <b>Quantitative Evaluation.</b> STELAR-Vision achieves strong gains across both in-distribution and out-of-distribution reasoning benchmarks. On ID datasets, it outperforms its base model Qwen2VL-7B-Instruct by <strong>9.7%</strong>, and even surpasses the larger Qwen2VL-72B-Instruct by <strong>7.3%</strong>. On OOD benchmarks, it exceeds Phi-4-multimodal-instruct by up to <strong>36%</strong> and LLaMA-3.2-11B-Vision-Instruct by up to <strong>13.2%</strong>. Compared to Chain-Only training, STELAR-Vision achieves up to <strong>13%</strong> higher accuracy, highlighting the power of topological augmentation.
+      </h2>
+
+      <br>
+
+      <img src="static/images/train_method.png" alt="MY ALT TEXT" class="motivation-image"/>
+      <h2 class="subtitle">
+        <b>Impact of TopoAug Dataset and Training Methods.</b> We present an ablation study on the in-distribution VLM_S2H and Math-V datasets to compare the performance of our models against counterparts trained exclusively on chain-based reasoning data across all training methods. <strong>STELAR-Vision</strong> consistently outperforms all Chain-Only variants across all ID datasets-specifically it improves the highest variant Chain-Only from 25% to 31% by <strong>6%</strong>, and boosts overall accuracy by <strong>4.3%</strong>, highlighting the effectiveness of topological augmentation.
+      </h2>
+
+      <br>
+
+      <img src="static/images/token_len.png" alt="MY ALT TEXT" class="motivation-image"/>
+      <h2 class="subtitle">
+        <b>Comparison of accuracy and generated token length across models:</b> STELAR-Vision improves performance while using fewer generation tokens. Frugal learning further improves generation efficiency.
+      </h2>
+
+    </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Paper contributions -->
+<section class="section hero is-light is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Conclusion</h2>
+        <div class="content has-text-justified">
+          <p>
+            In this work, we propose STELAR-Vision, a training framework that enables topology-aware reasoning in VLMs via generated responses. STELAR-Vision enhances vision-language reasoning by leveraging diverse topological structures, achieving a 9.7% accuracy improvement over its base model and outperforming its larger variant Qwen2VL-72B-Instruct by 7.3%. The Frugal Learning variant reduces output length by 18.1% while maintaining comparable accuracy, surpassing Chain-Only baselines in both efficiency and task effectiveness. STELAR-Vision demonstrates strong generalization across five diverse OOD datasets and achieves 4.3% higher overall accuracy on in-distribution tasks, consistently outperforming Chain-Only training.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper contributions -->
 
 
 <!-- Youtube video -->
