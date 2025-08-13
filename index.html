@@ -114,11 +114,21 @@
             <div class="publication-links">
               <!-- Arxiv PDF link -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/PLACEHOLDER.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://arxiv.org/pdf/2508.08688" target="_blank" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>Paper (Coming soon)</span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+              <!-- ArXiv abstract Link -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2508.08688" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
                 </a>
               </span>
 
@@ -129,16 +139,6 @@
                     <i class="fab fa-github"></i>
                   </span>
                   <span>Code (Coming soon)</span>
-                </a>
-              </span>
-
-              <!-- ArXiv abstract Link -->
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/PLACEHOLDER" target="_blank" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv (Coming soon)</span>
                 </a>
               </span>
 
@@ -165,6 +165,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Introduction</h2>
+        <h3 class="subtitle is-3"><b>Higher Accuracy, Faster Inference, Shorter Reasoning, Greener</b></h3>
         <div class="content has-text-justified">
           <p>
             Vision-language models (VLMs) have made significant strides in reasoning, yet they often struggle with complex multimodal tasks and tend to generate overly verbose outputs. A key limitation is their reliance on chain-of-thought (CoT) reasoning, despite many tasks benefiting from alternative topologies like trees or graphs. To address this, we introduce STELAR-Vision, a training framework for topology-aware reasoning. At its core is TopoAug, a synthetic data pipeline that enriches training with diverse topological structures. Using supervised fine-tuning and reinforcement learning, we post-train Qwen2VL models with both accuracy and efficiency in mind. Additionally, we propose Frugal Learning, which reduces output length with minimal accuracy loss.
@@ -272,6 +273,15 @@
         <h2 class="subtitle has-text-justified">
           <b>Comparison of accuracy and generated token length across models:</b> STELAR-Vision improves performance while using fewer generation tokens. Frugal learning further improves generation efficiency.
         </h2>
+
+        <br><br>
+
+        <img src="static/images/topo_ratio.png" alt="Comparison of accuracy and token length" class="image"/>
+        <h2 class="subtitle has-text-justified">
+          <b>Comparison of accuracy and generated token length across models:</b> STELAR-Vision improves performance while using fewer generation tokens. Frugal learning further improves generation efficiency.
+        </h2>
+
+        <br><br>
       </div>
     </div>
   </div>
@@ -285,7 +295,7 @@
         <h2 class="title is-3">Conclusion</h2>
         <div class="content has-text-justified">
           <p>
-            In this work, we propose STELAR-Vision, a training framework that enables topology-aware reasoning in VLMs via generated responses. STELAR-Vision enhances vision-language reasoning by leveraging diverse topological structures, achieving a 9.7% accuracy improvement over its base model and outperforming its larger variant Qwen2VL-72B-Instruct by 7.3%. The Frugal Learning variant reduces output length by 18.1% while maintaining comparable accuracy, surpassing Chain-Only baselines in both efficiency and task effectiveness. STELAR-Vision demonstrates strong generalization across five diverse OOD datasets and achieves 4.3% higher overall accuracy on in-distribution tasks, consistently outperforming Chain-Only training.
+            In this work, we propose <b>STELAR-Vision</b>, a training framework that enables topology-aware reasoning in VLMs via generated responses. STELAR-Vision enhances vision-language reasoning by leveraging diverse topological structures, achieving a 9.7% accuracy improvement over its base model and outperforming its larger variant Qwen2VL-72B-Instruct by 7.3%. The Frugal Learning variant reduces output length by 18.1% while maintaining comparable accuracy, surpassing Chain-Only baselines in both efficiency and task effectiveness. STELAR-Vision demonstrates strong generalization across five diverse OOD datasets and achieves 4.3% higher overall accuracy on in-distribution tasks, consistently outperforming Chain-Only training.
           </p>
         </div>
       </div>
