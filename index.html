@@ -13,7 +13,6 @@
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
-
   <meta name="twitter:title" content="STELAR-VISION: Self-Topology-Aware Efficient Learning for Aligned Reasoning in Vision">
   <meta name="twitter:description" content="We propose STELAR-Vision, a training framework explicitly trained for topology-aware reasoning.">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
@@ -23,18 +22,59 @@
   <meta name="keywords" content="Large Language Models, Vision Language Models, Topology, Topology-aware reasoning, Reinforcement Learning from Human Feedback, LLM, VLM">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
   <title>STELAR-VISION: Self-Topology-Aware Efficient Learning for Aligned Reasoning in Vision</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
+  
+  <style>
+    /* Consistent font sizes while keeping original fonts */
+    .title.is-1 {
+      font-size: 3rem !important;
+      font-weight: 600 !important;
+    }
+    
+    .title.is-3 {
+      font-size: 2rem !important;
+      font-weight: 600 !important;
+    }
+    
+    .subtitle.is-3 {
+      font-size: 1.5rem !important;
+      font-weight: 400 !important;
+    }
+    
+    .subtitle {
+      font-size: 1.125rem !important;
+      font-weight: 400 !important;
+      line-height: 1.6 !important;
+    }
+    
+    .publication-authors {
+      font-size: 1.125rem !important;
+      font-weight: 400 !important;
+    }
+    
+    .content p, .content li {
+      font-size: 1.125rem !important;
+      font-weight: 400 !important;
+      line-height: 1.6 !important;
+    }
+    
+    .button {
+      font-size: 1rem !important;
+      font-weight: 500 !important;
+    }
+    
+    .footer .content p {
+      font-size: 0.875rem !important;
+    }
+  </style>
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -46,69 +86,55 @@
 </head>
 <body>
 
+<!-- Hero section with title and authors -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">STELAR-VISION</h1>
+          <h2 class="subtitle is-3 publication-subtitle">Self-Topology-Aware Efficient Learning for Aligned Reasoning in Vision</h2>
+          
+          <div class="is-size-5 publication-authors">
+            <!-- Paper authors -->
+            <span class="author-block"><a href="https://stellar-neuron.github.io/stelar-vision/" target="_blank">Chen Li</a>,</span>
+            <span class="author-block"><a href="https://stellar-neuron.github.io/stelar-vision/" target="_blank">Han Zhang</a>,</span>
+            <span class="author-block"><a href="https://stellar-neuron.github.io/stelar-vision/" target="_blank">Zhantao Yang</a>,</span>
+            <span class="author-block"><a href="https://stellar-neuron.github.io/stelar-vision/" target="_blank">Fangyi Chen</a>,</span>
+            <span class="author-block"><a href="https://stellar-neuron.github.io/stelar-vision/" target="_blank">Zihan Wang</a>,</span>
+            <span class="author-block"><a href="https://stellar-neuron.github.io/stelar-vision/" target="_blank">Anudeepsekhar Bolimera</a>,</span>
+            <span class="author-block"><a href="https://stellar-neuron.github.io/stelar-vision/" target="_blank">Marios Savvides</a></span>
+          </div>
 
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Carnegie Mellon University</span>
+          </div>
+
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">STELAR-VISION</h1>
-            <h2 class="subtitle is-3 publication-subtitle">Self-Topology-Aware Efficient Learning for Aligned Reasoning in Vision</h2>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block"><a href="https://stellar-neuron.github.io/stelar-vision/" target="_blank">Chen Li</a>,</span>
-              <span class="author-block"><a href="https://stellar-neuron.github.io/stelar-vision/" target="_blank">Han Zhang</a>,</span>
-              <span class="author-block"><a href="https://stellar-neuron.github.io/stelar-vision/" target="_blank">Zhantao Yang</a>,</span>
-              <span class="author-block"><a href="https://stellar-neuron.github.io/stelar-vision/" target="_blank">Fangyi Chen</a>,</span>
-              <span class="author-block"><a href="https://stellar-neuron.github.io/stelar-vision/" target="_blank">Zihan Wang</a>,</span>
-              <span class="author-block"><a href="https://stellar-neuron.github.io/stelar-vision/" target="_blank">Anudeepsekhar Bolimera</a>,</span>
-              <span class="author-block"><a href="https://stellar-neuron.github.io/stelar-vision/" target="_blank">Marios Savvides</a></span>
-            </div>
+            <div class="publication-links">
+              <!-- Arxiv PDF link -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/PLACEHOLDER.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper (Coming soon)</span>
+                </a>
+              </span>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Carnegie Mellon University</span>
-                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
-                  </div>
+              <!-- Github link -->
+              <span class="link-block">
+                <a href="https://github.com/..." target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming soon)</span>
+                </a>
+              </span>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/PLACEHOLDER.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper (Coming soon)</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                    <!-- <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span> -->
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/..." target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code (Coming soon)</span>
-                  </a>
-                </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/PLACEHOLDER" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
+              <!-- ArXiv abstract Link -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/PLACEHOLDER" target="_blank" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
@@ -118,15 +144,13 @@
 
               <!-- HuggingFace Dataset Link -->
               <span class="link-block">
-                <a href="https://huggingface.co/collections/Stellar-Neuron/stelar-vision-collection-689a909010eff40d1f884d08" target="_blank"
-                class="external-link button is-normal is-rounded is-dark">
-                <span class="icon">
-                  <i class="fa fa-database"></i>
-                </span>
-                <span>HF Datasets</span>
-              </a>
-            </span>
-
+                <a href="https://huggingface.co/collections/Stellar-Neuron/stelar-vision-collection-689a909010eff40d1f884d08" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fa fa-database"></i>
+                  </span>
+                  <span>HF Datasets</span>
+                </a>
+              </span>
             </div>
           </div>
         </div>
@@ -134,7 +158,6 @@
     </div>
   </div>
 </section>
-
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -145,22 +168,20 @@
         <div class="content has-text-justified">
           <p>
             Vision-language models (VLMs) have made significant strides in reasoning, yet they often struggle with complex multimodal tasks and tend to generate overly verbose outputs. A key limitation is their reliance on chain-of-thought (CoT) reasoning, despite many tasks benefiting from alternative topologies like trees or graphs. To address this, we introduce STELAR-Vision, a training framework for topology-aware reasoning. At its core is TopoAug, a synthetic data pipeline that enriches training with diverse topological structures. Using supervised fine-tuning and reinforcement learning, we post-train Qwen2VL models with both accuracy and efficiency in mind. Additionally, we propose Frugal Learning, which reduces output length with minimal accuracy loss.
-On MATH-V and VLM_S2H, STELAR-Vision improves accuracy by 9.7% over its base model and surpasses the larger Qwen2VL-72B-Instruct by 7.3%. On five out-of-distribution benchmarks, it outperforms Phi-4-Multimodal-Instruct by up to 28.4% and LLaMA-3.2-11B-Vision-Instruct by up to 13.2%, demonstrating strong generalization. Compared to Chain-Only training, our approach achieves 4.3% higher overall accuracy on in-distribution datasets and consistently outperforms across all OOD benchmarks. The data and code will be available.
+            On MATH-V and VLM_S2H, STELAR-Vision improves accuracy by 9.7% over its base model and surpasses the larger Qwen2VL-72B-Instruct by 7.3%. On five out-of-distribution benchmarks, it outperforms Phi-4-Multimodal-Instruct by up to 28.4% and LLaMA-3.2-11B-Vision-Instruct by up to 13.2%, demonstrating strong generalization. Compared to Chain-Only training, our approach achieves 4.3% higher overall accuracy on in-distribution datasets and consistently outperforms across all OOD benchmarks. The data and code will be available.
           </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
 
-
-<!-- Large image -->
-<section class="section hero is-light is-small">
+<!-- Method overview image -->
+<section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="hero-body">
-        <img src="static/images/methodpipe.png" alt="MY ALT TEXT" class="large-image"/>
+      <div class="column is-four-fifths">
+        <img src="static/images/methodpipe.png" alt="STELAR-Vision framework overview" class="image"/>
         <h2 class="subtitle has-text-centered">
           An overview of the STELAR-Vision framework.
         </h2>
@@ -168,69 +189,48 @@ On MATH-V and VLM_S2H, STELAR-Vision improves accuracy by 9.7% over its base mod
     </div>
   </div>
 </section>
-<!-- End large image -->
 
-
-<!-- Teaser video-->
-<!-- <section class="hero teaser">
+<!-- Motivation section -->
+<section class="section hero is-light">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%"> -->
-        <!-- Your video here -->
-        <!-- <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section> -->
-<!-- End teaser video -->
-
-
-<!-- Motivation image -->
-<section class="hero is-light is-small">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
         <h2 class="title is-3">Motivation</h2>
+        <img src="static/images/FigureOne_v2.png" alt="Limitations of Chain-of-Thought reasoning" class="image"/>
+        <h2 class="subtitle has-text-justified">
+          <b>Limitations of the Popular Chain-of-Thought Reasoning Structures.</b> The widely adopted Chain-of-Thought (CoT) reasoning paradigm (in green) often results in unnecessarily verbose reasoning processes, as demonstrated in the first example. Under CoT reasoning, the model redundantly counts each cube, whereas with Graph topology (in blue), it quickly identifies the key point of the question. In the bottom-row example, CoT reasoning begins with a detailed examination of each subplot but ultimately arrives at an incorrect answer. In contrast, Tree topology (in red) initiates reasoning with a high-level overview before delving into specific features. In both scenarios, CoT-style reasoning proves suboptimal.
+        </h2>
       </div>
-      <img src="static/images/FigureOne.png" alt="MY ALT TEXT" class="primary-image"/>
-      <h2 class="subtitle">
-        <b>Limitations of the Popular Chain-of-Thought Reasoning Structures.</b> The widely adopted Chain-of-Thought (CoT) reasoning paradigm (in green) often results in unnecessarily verbose reasoning processes, as demonstrated in the first example. Under CoT reasoning, the model redundantly counts each cube, whereas with Graph topology (in blue), it quickly identifies the key point of the question. In the bottom-row example, CoT reasoning begins with a detailed examination of each subplot but ultimately arrives at an incorrect answer. In contrast, Tree topology (in red) initiates reasoning with a high-level overview before delving into specific features. In both scenarios, CoT-style reasoning proves suboptimal.
-      </h2>
-    </div>
     </div>
   </div>
 </section>
-<!-- End motivation image -->
 
-
-<!-- Two images side by side -->
+<!-- Two analysis images side by side -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
-      <div class="column is-half has-text-centered">
-        <img src="static/images/topo_accuracy_per_subject.png" alt="Comparison of topology accuracy across subjects" class="image"/>
-        <h2 class="subtitle has-text-centered">
-          <b>Comparison of topology accuracy across subjects:</b> Accuracy of Chain, Tree, and Graph reasoning topological structures per subject of MATH-V dataset. Chain remains the best overall reasoning structure, while Tree, and Graph perform better in at reasoning subjects such as "graph theory" or "statistics".
-        </h2>
-      </div>
-      <div class="column is-half has-text-centered">
-        <img src="static/images/violin_plot.png" alt="Caption B" class="image"/>
-        <h2 class="subtitle has-text-centered">
-          <b>Distribution of generated reasoning token length</b> of Chain, Tree, and Graph topological structures in TopoAug Dataset. The box within each violin plot represents the median, and 25% and 75% percentile thresholds.
-        </h2>
+      <div class="column is-four-fifths">
+        <div class="columns">
+          <div class="column is-half has-text-centered">
+            <img src="static/images/topo_accuracy_per_subject.png" alt="Comparison of topology accuracy across subjects" class="image"/>
+            <h2 class="subtitle has-text-justified">
+              <b>Comparison of topology accuracy across subjects:</b> Accuracy of Chain, Tree, and Graph reasoning topological structures per subject of MATH-V dataset. Chain remains the best overall reasoning structure, while Tree, and Graph perform better in reasoning subjects such as "graph theory" or "statistics".
+            </h2>
+          </div>
+          <div class="column is-half has-text-centered">
+            <img src="static/images/violin_plot.png" alt="Distribution of reasoning token length" class="image"/>
+            <h2 class="subtitle has-text-justified">
+              <b>Distribution of generated reasoning token length</b> of Chain, Tree, and Graph topological structures in TopoAug Dataset. The box within each violin plot represents the median, and 25% and 75% percentile thresholds.
+            </h2>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End two images side by side -->
-
 
 <!-- Paper contributions -->
-<section class="section hero is-light is-small">
+<section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -238,87 +238,47 @@ On MATH-V and VLM_S2H, STELAR-Vision improves accuracy by 9.7% over its base mod
         <div class="content has-text-justified">
           <ul>
             <li>We propose STELAR-Vision, a training framework explicitly trained for topology-aware reasoning. It leverages diverse reasoning topologies such as chains, trees, and graphs, aligns reasoning paths with question characteristics, and enables adaptive and efficient multimodal inference.</li>
-            <li>We introduce TopoAug, a data generation pipeline that automatically produces diverse topological reasoning and annotates optimal structures per question. We also integrate  Frugal Learning into the learning framework, achieving reductions in output length with minimal accuracy tradeoff.</li>
-            <li>By conducting experiments with post-training supervision and reinforcement learning, STELAR-Vision improves accuracy by 9.7% over its base model and its larger variant Qwen2VL-72B-Instruct by 7.3%. On the out-of-distribution dataset, it surpasses The Frugal Learning variant reduces output length by 18.1% while maintaining comparable accuracy. </li>
+            <li>We introduce TopoAug, a data generation pipeline that automatically produces diverse topological reasoning and annotates optimal structures per question. We also integrate Frugal Learning into the learning framework, achieving reductions in output length with minimal accuracy tradeoff.</li>
+            <li>By conducting experiments with post-training supervision and reinforcement learning, STELAR-Vision improves accuracy by 9.7% over its base model and its larger variant Qwen2VL-72B-Instruct by 7.3%. On the out-of-distribution dataset, it surpasses The Frugal Learning variant reduces output length by 18.1% while maintaining comparable accuracy.</li>
           </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End paper contributions -->
 
-
-<!-- Image carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Experiments</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item" style="translate: 0% 40%;">
-        <img src="static/images/main_table.png" alt="Quantitative evaluation results of STELAR-Vision across benchmarks"/>
-        <h2 class="subtitle has-text-centered">
-          <strong>Quantitative Evaluation.</strong> STELAR-Vision achieves strong gains across both in-distribution and out-of-distribution reasoning benchmarks. On ID datasets, it outperforms its base model Qwen2VL-7B-Instruct by <strong>9.7%</strong>, and even surpasses the larger Qwen2VL-72B-Instruct by <strong>7.3%</strong>. On OOD benchmarks, it exceeds Phi-4-multimodal-instruct by up to <strong>36%</strong> and LLaMA-3.2-11B-Vision-Instruct by up to <strong>13.2%</strong>. Compared to Chain-Only training, STELAR-Vision achieves up to <strong>13%</strong> higher accuracy, highlighting the power of topological augmentation.
-        </h2>
-      </div>
-      <div class="item" style="translate: 0% 30%;">
-        <img src="static/images/train_method.png" alt="Impact of TopoAug Dataset and Training Methods"/>
-        <h2 class="subtitle has-text-centered">
-          <strong>Impact of TopoAug Dataset and Training Methods.</strong> We present an ablation study on the in-distribution VLM_S2H and Math-V datasets to compare the performance of our models against counterparts trained exclusively on chain-based reasoning data across all training methods. <strong>STELAR-Vision</strong> consistently outperforms all Chain-Only variants across all ID datasets-specifically it improves the highest variant Chain-Only from 25% to 31% by <strong>6%</strong>, and boosts overall accuracy by <strong>4.3%</strong>, highlighting the effectiveness of topological augmentation.
-        </h2>
-      </div>
-      <div class="item">
-        <img src="static/images/token_len.png" alt="Comparison of accuracy and generated token length across models"/>
-        <h2 class="subtitle has-text-centered">
-          <strong>Comparison of accuracy and generated token length across models:</strong> STELAR-Vision improves performance while using fewer generation tokens. Frugal learning further improves generation efficiency.
-       </h2>
-     </div>
-     <div class="item" style="translate: 0% 10%;">
-      <img src="static/images/topo_accuracy_per_subject.png" alt="Comparison of topology accuracy across subjects in the MATH-V dataset"/>
-      <h2 class="subtitle has-text-centered">
-        <strong>Comparison of topology accuracy across subjects:</strong> Accuracy of Chain, Tree, and Graph reasoning topological structures per subject of the MATH-V dataset. Chain remains the best overall reasoning structure, while Tree and Graph perform better at reasoning subjects such as "graph theory" or "statistics".
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section> -->
-<!-- End image carousel -->
-
-<section class="hero is-light is-small">
+<!-- Experiments section -->
+<section class="section hero is-light">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
         <h2 class="title is-3">Experiments</h2>
+        
+        <img src="static/images/main_table.png" alt="Quantitative evaluation results" class="image"/>
+        <h2 class="subtitle has-text-justified">
+          <b>Quantitative Evaluation.</b> STELAR-Vision achieves strong gains across both in-distribution and out-of-distribution reasoning benchmarks. On ID datasets, it outperforms its base model Qwen2VL-7B-Instruct by <strong>9.7%</strong>, and even surpasses the larger Qwen2VL-72B-Instruct by <strong>7.3%</strong>. On OOD benchmarks, it exceeds Phi-4-multimodal-instruct by up to <strong>36%</strong> and LLaMA-3.2-11B-Vision-Instruct by up to <strong>13.2%</strong>. Compared to Chain-Only training, STELAR-Vision achieves up to <strong>13%</strong> higher accuracy, highlighting the power of topological augmentation.
+        </h2>
+
+        <br><br>
+
+        <img src="static/images/train_method.png" alt="Impact of TopoAug dataset and training methods" class="image"/>
+        <h2 class="subtitle has-text-justified">
+          <b>Impact of TopoAug Dataset and Training Methods.</b> We present an ablation study on the in-distribution VLM_S2H and Math-V datasets to compare the performance of our models against counterparts trained exclusively on chain-based reasoning data across all training methods. <strong>STELAR-Vision</strong> consistently outperforms all Chain-Only variants across all ID datasets-specifically it improves the highest variant Chain-Only from 25% to 31% by <strong>6%</strong>, and boosts overall accuracy by <strong>4.3%</strong>, highlighting the effectiveness of topological augmentation.
+        </h2>
+
+        <br><br>
+
+        <img src="static/images/token_len.png" alt="Comparison of accuracy and token length" class="image"/>
+        <h2 class="subtitle has-text-justified">
+          <b>Comparison of accuracy and generated token length across models:</b> STELAR-Vision improves performance while using fewer generation tokens. Frugal learning further improves generation efficiency.
+        </h2>
       </div>
-
-      <img src="static/images/main_table.png" alt="MY ALT TEXT" class="motivation-image"/>
-      <h2 class="subtitle">
-        <b>Quantitative Evaluation.</b> STELAR-Vision achieves strong gains across both in-distribution and out-of-distribution reasoning benchmarks. On ID datasets, it outperforms its base model Qwen2VL-7B-Instruct by <strong>9.7%</strong>, and even surpasses the larger Qwen2VL-72B-Instruct by <strong>7.3%</strong>. On OOD benchmarks, it exceeds Phi-4-multimodal-instruct by up to <strong>36%</strong> and LLaMA-3.2-11B-Vision-Instruct by up to <strong>13.2%</strong>. Compared to Chain-Only training, STELAR-Vision achieves up to <strong>13%</strong> higher accuracy, highlighting the power of topological augmentation.
-      </h2>
-
-      <br>
-
-      <img src="static/images/train_method.png" alt="MY ALT TEXT" class="motivation-image"/>
-      <h2 class="subtitle">
-        <b>Impact of TopoAug Dataset and Training Methods.</b> We present an ablation study on the in-distribution VLM_S2H and Math-V datasets to compare the performance of our models against counterparts trained exclusively on chain-based reasoning data across all training methods. <strong>STELAR-Vision</strong> consistently outperforms all Chain-Only variants across all ID datasets-specifically it improves the highest variant Chain-Only from 25% to 31% by <strong>6%</strong>, and boosts overall accuracy by <strong>4.3%</strong>, highlighting the effectiveness of topological augmentation.
-      </h2>
-
-      <br>
-
-      <img src="static/images/token_len.png" alt="MY ALT TEXT" class="motivation-image"/>
-      <h2 class="subtitle">
-        <b>Comparison of accuracy and generated token length across models:</b> STELAR-Vision improves performance while using fewer generation tokens. Frugal learning further improves generation efficiency.
-      </h2>
-
-    </div>
     </div>
   </div>
 </section>
 
-
-<!-- Paper contributions -->
-<section class="section hero is-light is-small">
+<!-- Conclusion -->
+<section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -332,113 +292,31 @@ On MATH-V and VLM_S2H, STELAR-Vision improves accuracy by 9.7% over its base mod
     </div>
   </div>
 </section>
-<!-- End paper contributions -->
 
-
-<!-- Youtube video -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container"> -->
-      <!-- Paper video. -->
-      <!-- <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video"> -->
-            <!-- Youtube embed code here -->
-            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
+<!-- BibTeX citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>Coming soon</code></pre>
   </div>
-</section> -->
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
-            <!-- Your video file here -->
-            <!-- <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
-            <!-- Your video file here -->
-            <!-- <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\ -->
-            <!-- Your video file here -->
-            <!-- <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-<!-- End video carousel -->
-
-
-
-<!-- Paper poster -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section> -->
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>Coming soon</code></pre>
-    </div>
 </section>
-<!--End BibTex citation -->
 
-
-  <footer class="footer">
+<!-- Footer -->
+<footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
-
         </div>
       </div>
     </div>
   </div>
 </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</body>
+</html>
